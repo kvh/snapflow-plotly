@@ -1,13 +1,14 @@
 [tool.poetry]
 authors = ["Ken Van Haren <kenvanharen@gmail.com>"]
-description = "Template module for snapflow"
+description = "Plotly module for snapflow"
 license = "BSD-3-Clause"
-name = "snapflow-{module}"
+name = "snapflow-plotly"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = "^3.7"
-snapflow = "^0.1.5"
+plotly = "^4.14.3"
+python = "^3.7.4"
+snapflow = "~0.5.4"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
@@ -17,6 +18,7 @@ mypy = "^0.770"
 pre-commit = "^2.1.1"
 pytest = "^4.6"
 pytest-cov = "^2.8.1"
+# snapflow = {path = "../../snapflow", develop = true}
 
 [tool.black]
 exclude = '''
